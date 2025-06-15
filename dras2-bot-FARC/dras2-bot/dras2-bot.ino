@@ -108,12 +108,10 @@ void loop() {
     Dung(chan1_DC1, chan2_DC1);
   }
 
-  if(RightJ < (Y_JOY_CALIB - saiso)){
-    //Bánh bên phải tiến lên
-    Lui(chan1_DC2, chan2_DC2, RightJ);
-  }else if(RightJ > (Y_JOY_CALIB + saiso)){
-    //Bánh bên phải lùi xuống
-    Tien(chan1_DC2, chan2_DC2, RightJ);
+  if(RightJ < (Y_JOY_CALIB - saiso)){  //banh phai tien
+    Tien(chan1_DC2, chan2_DC2, RightJ); 
+  }else if(RightJ > (Y_JOY_CALIB + saiso)){  //banh phai lui
+    Lui(chan1_DC2, chan2_DC2, RightJ); 
   }
   else {
     //Bánh bên phải dừng lại;
