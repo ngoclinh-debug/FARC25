@@ -101,7 +101,7 @@ void loop() {
     //Bánh bên trái tiến lên
     Tien(chan1_DC1, chan2_DC1, LeftJ);
   }else if(LeftJ > (Y_JOY_CALIB + saiso)){
-    //Bánh bên trái tiến lên
+    //Bánh bên trái lui
     Lui(chan1_DC1, chan2_DC1, LeftJ);
   }
   else {
@@ -113,8 +113,8 @@ void loop() {
     //Bánh bên phải tiến lên
     Tien(chan1_DC2, chan2_DC2, RightJ);
   }else if(RightJ > (Y_JOY_CALIB + saiso)){
-    //Bánh bên phải tiến lên
-    Tien(chan1_DC2, chan2_DC2, RightJ);
+    //Bánh bên phải lui
+    Lui(chan1_DC2, chan2_DC2, RightJ);
   }
   else {
     //Bánh bên phải dừng lại;
